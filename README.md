@@ -9,26 +9,26 @@ It is used Cargo to automatically manage build artifacts.
 
 To create a new project inside the main folder, run:
 
-```rust
+```bash
 cargo new hello-world
 ```
 
 To build and run the project in one command (most common during development):
 
-```rust
+```bash
 cargo run
 ```
 
 Or you can do it in two steps:
 
-```rust
+```bash
 cargo build    # This compiles the project
 ./target/debug/binary-search    # This runs the compiled binary
 ```
 
 By default, this will build in debug mode. When you're ready to create a release build with optimizations, you can use:
 
-```rust
+```bash
 cargo build --release    # Creates an optimized build
 # or
 cargo run --release     # Builds and runs the optimized version
@@ -36,6 +36,6 @@ cargo run --release     # Builds and runs the optimized version
 
 You can also check if your code compiles without creating an executable:
 
-```rust
+```bash
 cargo check    # Faster than build, useful while developing
 ``` 
