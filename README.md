@@ -10,32 +10,38 @@ It is used Cargo to automatically manage build artifacts.
 To create a new project inside the main folder, run:
 
 ```bash
-cargo new hello-world
+$ cargo new hello-world # or the project name
 ```
 
 To build and run the project in one command (most common during development):
 
 ```bash
-cargo run
+$ cargo run
 ```
 
 Or you can do it in two steps:
 
 ```bash
-cargo build    # This compiles the project
-./target/debug/binary-search    # This runs the compiled binary
+$ cargo build    # This compiles the project
+$ ./target/debug/binary-search    # This runs the compiled binary
 ```
 
 By default, this will build in debug mode. When you're ready to create a release build with optimizations, you can use:
 
 ```bash
-cargo build --release    # Creates an optimized build
+$ cargo build --release    # Creates an optimized build
 # or
-cargo run --release     # Builds and runs the optimized version
+$ cargo run --release     # Builds and runs the optimized version
 ```
 
 You can also check if your code compiles without creating an executable:
 
 ```bash
-cargo check    # Faster than build, useful while developing
+$ cargo check    # Faster than build, useful while developing
 ``` 
+
+You can format your source code file by running `rustfmt` 
+
+```bash
+$ rustfmt ./src/main.rs  #or any other file path
+```
